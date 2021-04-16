@@ -13,7 +13,7 @@ class Server extends Actor {
   var paths: Map[SocketIOClient, List[GridLocation]] = Map()
   var lastUpdateTime: Long = System.nanoTime()
 
-  val map: GameMap = GameMap(1)
+  val map: GameMap = GameMap(0)
 
   val config: Configuration = new Configuration {
     setHostname("localhost")
